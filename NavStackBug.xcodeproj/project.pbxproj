@@ -10,10 +10,6 @@
 		134CEE8129717706006A3FC5 /* NavStackBugApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CEE8029717706006A3FC5 /* NavStackBugApp.swift */; };
 		134CEE8529717707006A3FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134CEE8429717707006A3FC5 /* Assets.xcassets */; };
 		134CEE8829717707006A3FC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134CEE8729717707006A3FC5 /* Preview Assets.xcassets */; };
-		134CEE9529717749006A3FC5 /* NavigationStackState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CEE9129717748006A3FC5 /* NavigationStackState.swift */; };
-		134CEE9629717749006A3FC5 /* NavigationStackAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CEE9229717748006A3FC5 /* NavigationStackAction.swift */; };
-		134CEE9729717749006A3FC5 /* NavigationStackScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CEE9329717748006A3FC5 /* NavigationStackScope.swift */; };
-		134CEE9829717749006A3FC5 /* NavigationStackReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CEE9429717749006A3FC5 /* NavigationStackReducer.swift */; };
 		134CEE9B2971779B006A3FC5 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 134CEE9A2971779B006A3FC5 /* ComposableArchitecture */; };
 		134CEE9E297177BD006A3FC5 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CEE9D297177BD006A3FC5 /* Root.swift */; };
 		134CEEA0297178F2006A3FC5 /* FeatureA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CEE9F297178F2006A3FC5 /* FeatureA.swift */; };
@@ -28,10 +24,6 @@
 		134CEE8029717706006A3FC5 /* NavStackBugApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavStackBugApp.swift; sourceTree = "<group>"; };
 		134CEE8429717707006A3FC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		134CEE8729717707006A3FC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		134CEE9129717748006A3FC5 /* NavigationStackState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationStackState.swift; sourceTree = "<group>"; };
-		134CEE9229717748006A3FC5 /* NavigationStackAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationStackAction.swift; sourceTree = "<group>"; };
-		134CEE9329717748006A3FC5 /* NavigationStackScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationStackScope.swift; sourceTree = "<group>"; };
-		134CEE9429717749006A3FC5 /* NavigationStackReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationStackReducer.swift; sourceTree = "<group>"; };
 		134CEE9D297177BD006A3FC5 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 		134CEE9F297178F2006A3FC5 /* FeatureA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureA.swift; sourceTree = "<group>"; };
 		134CEEA1297179BB006A3FC5 /* FeatureB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureB.swift; sourceTree = "<group>"; };
@@ -72,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				134CEE9D297177BD006A3FC5 /* Root.swift */,
-				134CEE902971773B006A3FC5 /* CANavigation */,
 				134CEE8029717706006A3FC5 /* NavStackBugApp.swift */,
 				134CEE8429717707006A3FC5 /* Assets.xcassets */,
 				134CEE8629717707006A3FC5 /* Preview Content */,
@@ -91,17 +82,6 @@
 				134CEE8729717707006A3FC5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		134CEE902971773B006A3FC5 /* CANavigation */ = {
-			isa = PBXGroup;
-			children = (
-				134CEE9229717748006A3FC5 /* NavigationStackAction.swift */,
-				134CEE9429717749006A3FC5 /* NavigationStackReducer.swift */,
-				134CEE9329717748006A3FC5 /* NavigationStackScope.swift */,
-				134CEE9129717748006A3FC5 /* NavigationStackState.swift */,
-			);
-			path = CANavigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,10 +166,6 @@
 				134CEE8129717706006A3FC5 /* NavStackBugApp.swift in Sources */,
 				134CEE9E297177BD006A3FC5 /* Root.swift in Sources */,
 				134CEEAA297186C7006A3FC5 /* FeatureY.swift in Sources */,
-				134CEE9629717749006A3FC5 /* NavigationStackAction.swift in Sources */,
-				134CEE9829717749006A3FC5 /* NavigationStackReducer.swift in Sources */,
-				134CEE9529717749006A3FC5 /* NavigationStackState.swift in Sources */,
-				134CEE9729717749006A3FC5 /* NavigationStackScope.swift in Sources */,
 				134CEEA2297179BB006A3FC5 /* FeatureB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

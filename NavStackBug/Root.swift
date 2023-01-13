@@ -10,7 +10,6 @@ import Foundation
 import SwiftUI
 
 struct RootState: Hashable {
-    var navigationStack: NavigationStackState<Destination> = .init()
     var featureAState: FeatureA.State?
 }
 
@@ -22,7 +21,6 @@ enum Destination: Hashable {
 enum RootAction {
     case onAppear
     case featureA(FeatureA.Action)
-    case navigationStack(NavigationStackAction<Destination>)
     
 }
 
@@ -31,10 +29,6 @@ struct Root: ReducerProtocol {
     typealias Action = RootAction
     
     var body: some ReducerProtocolOf<Self> {
-        NavigationStackScope(
-            state: \.navigationStack,
-            action: /Action.navigationStack
-        )
         
         Reduce(_reduce(into:action: ))
             .ifLet(
@@ -51,9 +45,6 @@ struct Root: ReducerProtocol {
         action: Action
     ) -> EffectTask<Action> {
         switch action {
-            
-        case .navigationStack:
-            break
             
         case .onAppear:
             state.featureAState = .init(id: "featA")
